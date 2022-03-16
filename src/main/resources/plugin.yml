@@ -1,0 +1,9 @@
+name: CityRP-Paycheck
+version: '${project.version}'
+main: io.github.adrew1dev.cityrppaycheck.CityRPPaycheck
+api-version: 1.18
+authors: [ aDrew1 ]
+description: CityRP paycheck plugin. Receive paychecks after x amount of time.
+website: mc.cityrp.us
+softdepend:
+  - Vault

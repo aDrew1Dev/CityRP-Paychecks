@@ -1,0 +1,29 @@
+#####################################
+#          CityRP Paychecks         #
+#             by: aDrew1            #
+#####################################
+
+Version: 1.0.0 # NO TOUCHY!
+
+#####################################
+#              SETTINGS             #
+#####################################
+
+Version Check: 'true' # Set to 'true' to perform version check on plugin load. Set to 'false' to disable.
+
+TopSpacer: ' ' # Spacer that is above the paycheck message. Set to ' ' for a blank space.
+Header: '&c&lCityRP Paycheck' # First line (header) of the paycheck message.
+Subheader: '&eA Paycheck has been deposited to your account!' # Second line (sub-header) of the paycheck message.
+Body: '&7Deposited: &e$%a%' # Third line (body) of the paycheck message.
+BottomSpacer: ' ' # Spacer that is below the paycheck message. Set to ' ' for a blank space.
+
+Paycheck Frequency: 100 # in minutes
+
+#####################################
+#              PAYCHECKS            #
+#####################################
+
+Paychecks:
+  100: # Add as many of these groups as you would like. You can name them anything.
+    perm: 'cityrp.paycheck.100' # Set the permission to whatever you would like.
+    amt: 100 # This amount must be a positive whole number (integer).
