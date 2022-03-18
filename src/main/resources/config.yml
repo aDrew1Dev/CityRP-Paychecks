@@ -3,21 +3,35 @@
 #             by: aDrew1            #
 #####################################
 
-Version: 1.0.0 # NO TOUCHY!
+Version: '1.1.0' # NO TOUCHY!
+Version Check: true # Set to 'true' to perform version check on plugin load. Set to 'false' to disable.
 
 #####################################
 #              SETTINGS             #
 #####################################
 
-Version Check: 'true' # Set to 'true' to perform version check on plugin load. Set to 'false' to disable.
+# USE /pc help TO VIEW COMMANDS!
 
-TopSpacer: ' ' # Spacer that is above the paycheck message. Set to ' ' for a blank space.
-Header: '&c&lCityRP Paycheck' # First line (header) of the paycheck message.
-Subheader: '&eA Paycheck has been deposited to your account!' # Second line (sub-header) of the paycheck message.
-Body: '&7Deposited: &e$%a%' # Third line (body) of the paycheck message.
-BottomSpacer: ' ' # Spacer that is below the paycheck message. Set to ' ' for a blank space.
+# Permissions:
+# cityrp.paychecks.admin - Allows usage of the help, reload, and send commands.
 
-Paycheck Frequency: 100 # in minutes
+# Placeholders:
+# %a% - Amount of money deposited.
+# %p% - Player's name who is seeing the message. (For "Invalid Player", this variable will represent the target player!)
+
+Prefix: '&c&lCityRP &8&l»'
+Incorrect Usage: '&cError! &7Incorrect command usage. Use &e/paycheck help &7to see all commands.'
+No Permission: '&cError! &7You do not have permission to do this!'
+Invalid Player: '&cError! &e%p% &7was not found or is not online.'
+
+Message:
+  - ' '
+  - '&c&lCityRP Paycheck'
+  - '&eA Paycheck has been deposited to your account!'
+  - '&7Deposited: &e$%a%'
+  - ' '
+
+Paycheck Frequency: 20 # in minutes
 
 #####################################
 #              PAYCHECKS            #
@@ -27,3 +41,6 @@ Paychecks:
   100: # Add as many of these groups as you would like. You can name them anything.
     perm: 'cityrp.paycheck.100' # Set the permission to whatever you would like.
     amt: 100 # This amount must be a positive whole number (integer).
+  200: # Add as many of these groups as you would like. You can name them anything.
+    perm: 'cityrp.paycheck.200' # Set the permission to whatever you would like.
+    amt: 200 # This amount must be a positive whole number (integer).

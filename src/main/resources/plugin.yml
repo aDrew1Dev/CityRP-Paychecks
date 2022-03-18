@@ -7,3 +7,13 @@ description: CityRP paycheck plugin. Receive paychecks after x amount of time.
 website: mc.cityrp.us
 softdepend:
   - Vault
+commands:
+  paycheck:
+    description: /paycheck help
+    usage: /paycheck
+  pc:
+    description: /pc help (Alias for /paycheck)
+    usage: /pc
+  paychecks:
+    description: /paychecks help (Alias for /paycheck)
+    usage: /paychecks
